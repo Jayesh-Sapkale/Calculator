@@ -1,0 +1,53 @@
+.center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-yellow {
+    background: rgb(233, 165, 40);
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.m-w-20 {
+    max-width: 20vw;
+}
+
+.white-color {
+    color: white;
+}
+.black-color{
+    color:black;
+}
+
+.bg-gray {
+    background: rgb(66, 64, 64);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.iconPadding {
+    padding: 4px;
+}
+
+.fa-regular,
+.far {
+    font-weight: 800;
+}
