@@ -1,6 +1,4 @@
 html {
-    max-height: 100%;
-    max-width: 100%;
     background-image: url("/images/calci_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,15 +85,14 @@ html {
 @media screen and (max-width: 1230px) {
     .container {
         border-radius: 50px;
-        padding: 0px;
-        max-height: 460px;
-        width: 260px;
+        height: 600px;
+        width: 250px;
         border: 2px solid #505F4E;
         box-shadow: 10px 10px #505F4E;
     }
 
     .icons {
-        margin-top: 10px;
+        margin-top: 30px;
         padding: 12px;
         display: inline-flex;
         text-align: left;
@@ -104,27 +101,25 @@ html {
     }
 
     .row {
-        padding: 4px;
+        padding: 2px;
     }
 
     .button {
-        width: 40px;
-        height: 40px;
-        font-size: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
-    .m-w-20 {
-        max-width: 25vw;
-    }
-
-    #main {
-        transform: rotate(0deg);
-    }
 
     .big-btn {
-        width: 60px;
+        width: 100px;
     }
+
+    .html {
+        background-size: auto;
+    }
+
 }
