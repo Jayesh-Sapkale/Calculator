@@ -58,11 +58,11 @@ html {
 
 
 .icons {
+    margin: 0 20px;
     display: inline-flex;
     text-align: left;
     justify-content: left;
     font-size: 12px;
-    margin-right: 15px;
 }
 
 
@@ -80,6 +80,15 @@ html {
 #main {
     margin-top: 170px;
     transform: rotate(7deg);
+}
+
+.disland {
+
+    margin: 0;
+    height: 60px;
+    width: 4vw;
+    background-color: rgb(64, 61, 61);
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 1230px) {
