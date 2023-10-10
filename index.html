@@ -6,68 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Simple Calculator</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="stylesheet" type="text/css" href="/utils.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/utils.css"> -->
     <script src="https://kit.fontawesome.com/30bad8d7e4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="top-bar">
-            <div class="flat"></div>
-            <div class="camera">
-                <div class="insideCam"></div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="top-bar">
+                <div class="flat"></div>
+                <div class="camera">
+                    <div class="inside-cam"></div>
+                </div>
             </div>
-        </div>
-        <div class="time-icons">
-            <p id="time"></p>
-            <div class="icons">
-                <i class="iconPadding fa-sharp fa-solid fa-signal white-color"></i>
-                <i class="iconPadding fa-solid fa-wifi white-color"></i>
-                <i class="iconPadding fa-solid fa-battery-half white-color"></i>
+            <div class="time-icons">
+                <p id="time"></p>
+                <div class="icons">
+                    <i class="iconPadding fa-sharp fa-solid fa-signal white-color"></i>
+                    <i class="iconPadding fa-solid fa-wifi white-color"></i>
+                    <i class="iconPadding fa-solid fa-battery-half white-color"></i>
+                </div>
             </div>
-        </div>
 
 
-        <input class="input center right" type="text" placeholder="0">
+            <input class="input" type="text" placeholder="0">
 
-        <div class="row">
-            <button class="button center">AC</button>
-            <button id="del" class="button center">DEL</button>
-            <button class="button center">%</button>
-            <button class="button bg-yellow center">/</button>
-        </div>
-        <div class="row">
-            <button class="button center bg-gray white-color">7</button>
-            <button class="button center bg-gray white-color">8</button>
-            <button class="button center bg-gray white-color">9</button>
-            <button class="button bg-yellow center">*</button>
-        </div>
-        <div class="row">
-            <button class="button center bg-gray white-color">4</button>
-            <button class="button center bg-gray white-color">5</button>
-            <button class="button center bg-gray white-color">6</button>
-            <button class="button bg-yellow center">-</button>
-        </div>
-        <div class="row">
-            <button class="button center bg-gray white-color">1</button>
-            <button class="button center bg-gray white-color">2</button>
-            <button class="button center bg-gray white-color">3</button>
-            <button class="button bg-yellow center">+</button>
-        </div>
-        <div class="row">
-            <button class="button  white-color big-btn center bg-gray">0</button>
-            <button class="button center bg-gray white-color">.</button>
-            <button class="button bg-yellow center">=</button>
+            <div class="row-container">
+                <div class="row">
+                    <button class="button gray-color">AC</button>
+                    <button id="del" class="button gray-color">DEL</button>
+                    <button class="button gray-color">%</button>
+                    <button class="button orange-color">/</button>
+                </div>
+                <div class="row">
+                    <button class="button dark-gray-color">7</button>
+                    <button class="button dark-gray-color">8</button>
+                    <button class="button dark-gray-color">9</button>
+                    <button class="button orange-color">*</button>
+                </div>
+                <div class="row">
+                    <button class="button dark-gray-color">4</button>
+                    <button class="button dark-gray-color">5</button>
+                    <button class="button dark-gray-color">6</button>
+                    <button class="button orange-color">-</button>
+                </div>
+                <div class="row">
+                    <button class="button dark-gray-color">1</button>
+                    <button class="button dark-gray-color">2</button>
+                    <button class="button dark-gray-color">3</button>
+                    <button class="button orange-color">+</button>
+                </div>
+                <div class="row">
+                    <button class="button dark-gray-color big-btn">0</button>
+                    <button class="button dark-gray-color">.</button>
+                    <button class="button orange-color">=</button>
+                </div>
+            </div>
+            <div class="horizontal-bar">
+
+            </div>
         </div>
     </div>
     </div>
+
 </body>
 
-<script src="/jquery-3.6.1.js"></script>
-<script src="/script.js"></script>
+
 
 </html>
