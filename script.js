@@ -1,12 +1,23 @@
 $(document).ready(function () {
 
-    console.log("Welcome to the calculator!");
+    console.log("Welcome to the simple calculator!");
 
     let string = "";
     let input = document.querySelector("input");
     let button = document.querySelectorAll(".button");
-    let time = document.getElementById("time");
-    time.innerHTML = new Date().toLocaleTimeString();
+
+    function updateTime() {
+        const now = new Date();
+
+        clockStr = now.toLocaleTimeString();
+
+        time.innerText = clockStr;
+    }
+
+    updateTime();
+    setInterval(updateTime, 1000);
+
+
     Array.from(button).forEach((button) => {
         button.addEventListener("click", (e) => {
             if (e.target.innerHTML == '=') {
