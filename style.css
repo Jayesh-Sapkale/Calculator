@@ -152,3 +152,141 @@
     background-color: white;
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+        width: 85vw;
+        height: 90vh;
+        transform: rotate(0);
+        margin: 10px auto;
+        border-radius: 70px;
+        padding: 0;
+    }
+
+    .top-bar {
+        height: 5vh;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 2px;
+    }
+
+    .flat {
+        background: linear-gradient(darkgray, black);
+        height: 1vh;
+        width: 20vw;
+        border-radius: 3px;
+    }
+
+    .camera {
+        background: linear-gradient(black);
+        border-radius: 50%;
+        height: 2vh;
+        width: 5vw;
+    }
+
+    .inside-cam {
+        background-color: blue;
+        border-radius: 50%;
+        height: 1vh;
+        width: 2vw;
+        margin: 5px auto 0 auto;
+    }
+
+    .time-icons {
+        padding: 2px 20px;
+        color: white;
+        height: 2vh;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #time {
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    .input {
+        /* background-color: gray; */
+        margin: 30px 0;
+        width: 100%;
+        height: 10vh;
+        color: white;
+        text-align: end;
+        font-size: 2rem;
+        background: transparent;
+        border: none;
+        padding: 0 10px;
+
+    }
+
+    .input:focus {
+        outline: none
+    }
+
+    .row-container {
+        /* background-color: gray; */
+
+        border: 2px solid black;
+        height: 58vh;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        padding: 0 17px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .row button {
+        margin: 0 4px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
+    }
+
+    .row {
+        display: flexbox;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .row .big-btn {
+        border-radius: 50px;
+        width: 112px;
+    }
+
+    .row .big-btn:hover {
+        width: 105px;
+    }
+
+    .row button:hover {
+        cursor: pointer;
+        height: 45px;
+        width: 45px;
+    }
+
+
+    .horizontal-bar {
+        height: 0.5vh;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+
+
+
+}
