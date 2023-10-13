@@ -26,6 +26,10 @@
     padding: 0 20px 20px 20px;
     border: 3px solid lightblue;
     box-shadow: 5px 5px lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-bar {
@@ -60,8 +64,10 @@
 }
 
 .time-icons {
+    /* background-color: gray; */
     color: white;
     height: 2vh;
+    width: 100%;
     font-size: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -153,25 +159,30 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
 
     .container {
         width: 85vw;
-        height: 90vh;
+        height: 80vh;
         transform: rotate(0);
-        margin: 10px auto;
+        margin: 0px auto;
         border-radius: 70px;
         padding: 0;
+
     }
 
     .top-bar {
         height: 5vh;
         width: 50%;
-        margin: 0 auto;
+        margin: 10px auto;
+        margin-top: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 2px 2px;
+        /* background-color: gray; */
+
+
     }
 
     .flat {
@@ -199,11 +210,13 @@
     .time-icons {
         padding: 2px 20px;
         color: white;
-        height: 2vh;
+        height: 4vh;
+        width: 95%;
         font-size: 0.8rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        /* background-color: gray; */
+        margin: 0 30px;
     }
 
     #time {
@@ -213,16 +226,18 @@
     }
 
     .input {
-        /* background-color: gray; */
-        margin: 30px 0;
-        width: 100%;
+
+        margin: 30px 5px;
+        width: 95%;
         height: 10vh;
         color: white;
         text-align: end;
-        font-size: 2rem;
-        background: transparent;
+        font-size: 2.2rem;
+        background-color: transparent;
         border: none;
         padding: 0 10px;
+        margin-top: 50px;
+        /* background-color: gray; */
 
     }
 
@@ -232,20 +247,19 @@
 
     .row-container {
         /* background-color: gray; */
-
         border: 2px solid black;
-        height: 58vh;
+        height: 53vh;
         border-bottom-left-radius: 70px;
         border-bottom-right-radius: 70px;
         padding: 0 17px;
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
-        margin-top: 20px;
+        padding-top: 8px;
     }
 
     .row button {
-        margin: 0 4px;
+        margin: 0 5px;
         height: 50px;
         width: 50px;
         border-radius: 50%;
@@ -279,9 +293,9 @@
 
     .horizontal-bar {
         height: 0.5vh;
-        width: 40%;
+        width: 35%;
         margin: 0 auto;
-        margin-bottom: 2px;
+        margin-bottom: 10px;
         background-color: white;
         border-radius: 20px;
     }
