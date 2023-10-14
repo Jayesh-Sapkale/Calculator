@@ -5,12 +5,13 @@ $(document).ready(function () {
     let string = "";
     let input = document.querySelector("input");
     let button = document.querySelectorAll(".button");
+    let clockStr;
+
 
     function updateTime() {
         const now = new Date();
         var hour = now.getHours();
         var minute = now.getMinutes();
-
         if (hour > 12) {
             hour = hour - 12;
         }
@@ -18,12 +19,12 @@ $(document).ready(function () {
 
         if (hour < 10) {
             clockStr = "0" + hour + ":" + minute;
-
         }
-
-        if (minute < 10) {
+        else if (minute < 10) {
             clockStr = hour + ":" + "0" + minute;
-
+        }
+        else {
+            clockStr = hour + ":" + minute;
         }
 
         time.innerText = clockStr;
