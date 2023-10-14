@@ -191,9 +191,10 @@ body {
     .container {
         margin: 10vh auto;
         transform: rotate(0);
-        height: 70vh;
+        height: 68vh;
         width: 60vw;
         border-radius: 10vw;
+        box-shadow: 2vw 2vw #505F4E;
     }
 
 
