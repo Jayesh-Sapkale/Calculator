@@ -12,21 +12,19 @@ $(document).ready(function () {
         const now = new Date();
         var hour = now.getHours();
         var minute = now.getMinutes();
+
         if (hour > 12) {
             hour = hour - 12;
         }
-
+        clockStr = hour + ":" + minute;
 
         if (hour < 10) {
             clockStr = "0" + hour + ":" + minute;
         }
-        else if (minute < 10) {
+
+        if (minute < 10) {
             clockStr = hour + ":" + "0" + minute;
         }
-        else {
-            clockStr = hour + ":" + minute;
-        }
-
         time.innerText = clockStr;
     }
 
