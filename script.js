@@ -8,8 +8,23 @@ $(document).ready(function () {
 
     function updateTime() {
         const now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
 
-        clockStr = now.toLocaleTimeString();
+        if (hour > 12) {
+            hour = hour - 12;
+        }
+
+
+        if (hour < 10) {
+            clockStr = "0" + hour + ":" + minute;
+
+        }
+
+        if (minute < 10) {
+            clockStr = hour + ":" + "0" + minute;
+
+        }
 
         time.innerText = clockStr;
     }
